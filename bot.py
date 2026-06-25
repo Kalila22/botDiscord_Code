@@ -24,5 +24,8 @@ async def choose(ctx, *choices: str):
     """Chooses between multiple choices."""
     await ctx.send(random.choice(choices))
 
+@bot.command()
+async def cool(ctx):
+    await ctx.send('Yes, the bot is cool.')
 
 bot.run("TOKEN")
